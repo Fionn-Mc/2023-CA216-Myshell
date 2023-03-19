@@ -16,3 +16,30 @@ You should follow the instructions below:
 
 ## Other notes
 There are supporting exercises to help you with the project.  You will find them all under  [Lab04/05 on the Loop CA216 Site](https://loop.dcu.ie/mod/book/view.php?id=2054177).  Use Git regularly and commit versions of your code often.
+
+
+Shell:
+    This is a typed interface with which you can interface with a computer through commands.
+
+
+Commands:
+
+-clr:
+    clears the interface of previously generated or typed text
+
+-dir:
+    lists the files in the current folder
+
+-quit:
+    ends the program
+
+-cd (directory):
+    changes the current workind directory or folder to the specified directory
+
+-environ:
+    lists all of the environment strings
+
+
+Name: Fionn McCloskey
+Student Number: 21445606
+I acknowledge the DCU Academic Integrity Policy

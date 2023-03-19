@@ -8,6 +8,9 @@ Shell:
         -type "./myshell" to run the program
     )
 
+
+
+
 Commands:
 
 -clr:
@@ -30,6 +33,51 @@ Commands:
 
 -pause:
     pauses the program until enter is pressed
+
+
+
+
+Environment Concepts:
+
+-Environment Variables: A set of key-value pairs that are used to store information about the environment of the shell. Used to pass information between processes and to configure the behavior of the shell.
+
+-Command Line Arguments: arguments passed to a shell program when it is executed. Used to specify the behavior of the program or to provide input to the program.
+
+-Standard Input, Output, and Error: The streams of data used to communicate with the user or with other processes. In C, these streams are represented by the file descriptors stdin, stdout, and stderr, respectively.
+
+-Process Environment: A set of variables and data structures used to manage the execution of a program. It includes information about the current working directory, the process ID, and other important information.
+
+-Signal Handling: A way for the operating system to communicate with a process. They can be used to indicate that an error has occurred, or to request that the process terminate.
+
+
+
+
+I/O Redirection:
+
+-Allows the user to control where the input and output of a command is sent.
+
+-I/O redirection is done using special characters, such as <, >, and >>, which are called input/output redirection operators.
+
+-The < operator is used to direct input from a file into a program.
+
+-The > operator is used to redirect output to a file.
+
+-The >> operator is used to append output to a file.
+
+-It is possible to use input and output redirection on the same program.
+
+
+
+
+Sources:
+
+-Linux System Programming: Talking Directly to the Kernel and C Library by Robert Love (https://books.google.ie/books?hl=en&lr=&id=K1vXEb1SgawC&oi=fnd&pg=PR2&dq=linux+shell+in+c&ots=ffG2F3BWVx&sig=cTdG_LE3zE3GUSMHMKVvhTUVVpU&redir_esc=y#v=onepage&q=linux%20shell%20in%20c&f=false)
+
+-A High-Level Programming and Command Language by Christopher W. Fraser and David R. Hanson (https://dl.acm.org/doi/pdf/10.1145/872728.806868)
+
+-UNIX I/O System, I/O Redirection and Piping by Y. Liu et al (https://ewb.seedsnet.org/LOCAL_CONTENT/Books/Unix%20OS/chp%253A10.1007%252F978-3-642-20432-6_7.pdf)
+
+-I/O Redirection (http://linuxcommand.org/lc3_lts0070.php)
 
 
 

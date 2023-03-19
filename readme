@@ -1,0 +1,38 @@
+Shell:
+    This is a typed interface with which you can interface with a computer through commands.
+
+    (to open
+        -open the terminal on linux
+        -navigate to te repository that myshell is stored
+        -type make into the command line
+        -type "./myshell" to run the program
+    )
+
+Commands:
+
+-clr:
+    clears the interface of previously generated or typed text
+
+-dir:
+    lists the files in the current folder
+
+-quit:
+    ends the program
+
+-cd (directory):
+    changes the current workind directory or folder to the specified directory
+
+-environ:
+    lists all of the environment strings
+
+-echo:
+    repeats input given on command line back onto command line
+
+-pause:
+    pauses the program until enter is pressed
+
+
+
+Name: Fionn McCloskey
+Student Number: 21445606
+I acknowledge the DCU Academic Integrity Policy

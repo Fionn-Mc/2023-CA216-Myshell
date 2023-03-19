@@ -13,6 +13,9 @@ I acknowledge the DCU Academic Integrity Policy
 #include <signal.h>
 #include <fcntl.h>
 
+// #include <myshell.h>
+
+
 #define LINE_LIMIT 512
 #define WORD_LIMIT 32
 #define SEPARATORS " \t\n"
@@ -23,6 +26,7 @@ int tokenize_input(char *line, char **words, int limit);
 void execute_command(char **words);
 void change_directory(char **words);
 void print_working_directory();
+
 
 int main(int argc, char* argv[]) {
     char line[LINE_LIMIT];
@@ -40,6 +44,7 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
+
 
 void print_prompt(char *prompt) {
     char *cwd = malloc(LINE_LIMIT * sizeof(char));
@@ -116,6 +121,17 @@ void execute_command(char **words) {
     }
     else if (strcmp(words[0], "cd") == 0) {
         change_directory(words);
+    }
+    else if (strcmp(words[0], "echo") == 0) {
+        for (int j = 1; words[j] != NULL; j++) {
+            printf("%s ", words[j]);
+        }
+        printf("\n");
+    }
+    else if (strcmp(words[0], "pause") == 0) {
+        printf("Progam Paused. Press Enter\n");
+        getchar();
+        printf("Program resumed.\n");
     }
     else if (strcmp(words[0], "environ") == 0) {
         system("env");

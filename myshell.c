@@ -111,6 +111,9 @@ void execute_command(char **words) {
     else if (strcmp(words[0], "cd") == 0) {
         change_directory(words);
     }
+    else if (strcmp(words[0], "environ") == 0) {
+        system("env");
+    }
     else {
         // execute other commands here
         pid_t pid = fork();
